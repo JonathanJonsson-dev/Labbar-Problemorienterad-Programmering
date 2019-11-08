@@ -25,7 +25,7 @@ namespace Uppgift5
             InitializeComponent();
         }
 
-        private void beräknaBtn_Click(object sender, RoutedEventArgs e)
+        private void beräknaBtn_Click(object sender, RoutedEventArgs e) 
         {
             int tal1;
             int tal2;
