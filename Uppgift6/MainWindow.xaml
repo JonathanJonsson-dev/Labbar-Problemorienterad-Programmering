@@ -1,0 +1,23 @@
+﻿<Window x:Class="Uppgift6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift6"
+        mc:Ignorable="d"
+        Title="Miniräknare" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="summaBtn" Content="+" HorizontalAlignment="Left" Margin="231,143,0,0" VerticalAlignment="Top" Width="30" Click="summaBtn_Click"/>
+        <Button x:Name="minusBtn" Content="-" HorizontalAlignment="Left" Margin="266,143,0,0" VerticalAlignment="Top" Width="30" Click="minusBtn_Click"/>
+        <Button x:Name="multiplikationBtn" Content="*" HorizontalAlignment="Left" Margin="301,143,0,0" VerticalAlignment="Top" Width="30" Click="multiplikationBtn_Click"/>
+        <Button x:Name="divisionBtn" Content="/" HorizontalAlignment="Left" Margin="336,143,0,0" VerticalAlignment="Top" Width="30" Click="divisionBtn_Click"/>
+        <TextBox x:Name="tal1TextBox" HorizontalAlignment="Left" Height="23" Margin="231,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="tal2TextBox" HorizontalAlignment="Left" Height="23" Margin="298,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="resultatTextBox" HorizontalAlignment="Left" Height="23" Margin="231,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="rensaBtn" Content="Rensa" HorizontalAlignment="Left" Margin="356,200,0,0" VerticalAlignment="Top" Width="75" Click="rensaBtn_Click"/>
+        <Label Content="Tal 1" HorizontalAlignment="Left" Margin="231,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.431,0.018"/>
+        <Label Content="Tal 2" HorizontalAlignment="Left" Margin="298,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.763,1.962"/>
+        <Label x:Name="räknesättLabel" HorizontalAlignment="Left" Margin="231,174,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
