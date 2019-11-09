@@ -24,5 +24,61 @@ namespace Uppgift8
         {
             InitializeComponent();
         }
+
+        private void beräknaBtn_Click(object sender, RoutedEventArgs e)
+
+        {
+            if (summaRadioBtn.IsChecked == true)
+            {
+                int tal1 = int.Parse(tal1TextBox.Text);
+                int tal2 = int.Parse(tal2TextBox.Text);
+
+                // summaerar tal och skickar dessa till resultatTextBox
+                int resultat;
+                resultat = tal1 + tal2;
+
+                //resultatTextBox.Text = Math.Round(resultat, 2).ToString();
+                resultatTextBox.Text = resultat.ToString();
+            }
+
+            else if (subtraheraRadioBtn.IsChecked == true)
+            {
+                int tal1 = int.Parse(tal1TextBox.Text);
+                int tal2 = int.Parse(tal2TextBox.Text);
+
+                // summaerar tal och skickar dessa till resultatTextBox
+                int resultat;
+                resultat = tal1 - tal2;
+
+                //resultatTextBox.Text = Math.Round(resultat, 2).ToString();
+                resultatTextBox.Text = resultat.ToString();
+            }
+
+            else if (multiplikationRadioBtn.IsChecked == true)
+            {
+                int tal1 = int.Parse(tal1TextBox.Text);
+                int tal2 = int.Parse(tal2TextBox.Text);
+
+                // summaerar tal och skickar dessa till resultatTextBox
+                int resultat;
+                resultat = tal1 * tal2;
+
+                //resultatTextBox.Text = Math.Round(resultat, 2).ToString();
+                resultatTextBox.Text = resultat.ToString();
+            }
+
+            else if (divisionRadioBtn.IsChecked == true)
+            {
+                double tal1 = double.Parse(tal1TextBox.Text);
+                double tal2 = double.Parse(tal2TextBox.Text);
+
+                // summaerar tal och skickar dessa till resultatTextBox
+                double resultat;
+                resultat = tal1 / tal2;
+
+                //resultatTextBox.Text = Math.Round(resultat, 2).ToString();
+                resultatTextBox.Text = resultat.ToString();
+            }
+        }
     }
 }

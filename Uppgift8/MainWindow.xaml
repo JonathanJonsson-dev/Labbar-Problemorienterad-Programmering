@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Uppgift8"
         mc:Ignorable="d"
-        Title="Kalkylator" Height="450" Width="800" FontSize="25">
+        Title="Kalkylator" Height="450" Width="800" FontSize="10">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="139,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="345,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="545,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="=" HorizontalAlignment="Left" Margin="488,185,0,0" VerticalAlignment="Top"/>
-        <Button Content="Beräkna" HorizontalAlignment="Left" Margin="433,281,0,0" VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="tal1TextBox" HorizontalAlignment="Left" Height="23" Margin="164,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tal2TextBox" HorizontalAlignment="Left" Height="23" Margin="345,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="resultatTextBox" HorizontalAlignment="Left" Height="23" Margin="545,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="=" HorizontalAlignment="Left" Margin="488,171,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Button x:Name="beräknaBtn" Content="Beräkna" HorizontalAlignment="Left" Margin="437,235,0,0" VerticalAlignment="Top" Width="135" FontSize="20" Click="beräknaBtn_Click"/>
+        <RadioButton x:Name="summaRadioBtn" Content="+" HorizontalAlignment="Left" Margin="296,206,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="subtraheraRadioBtn" Content="-" HorizontalAlignment="Left" Margin="296,225,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="multiplikationRadioBtn" Content="*" HorizontalAlignment="Left" Margin="296,244,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="divisionRadioBtn" Content="/" HorizontalAlignment="Left" Margin="296,263,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
