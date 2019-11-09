@@ -44,12 +44,12 @@ namespace Uppgift9b
 
                 else if (ålder < 15 && ålder >= 11)
                 {
-                    resultatLabel.Content = $"Hej {namn}. Du är {ålder} gammal och då får du se filmer med åldersgräns upp till 11 år.";
+                    resultatLabel.Content = $"Hej {namn}. Du är {ålder} gammal och då får du se filmer med åldersgräns upp till 15 år tillsammans med en vuxen";
                 }
 
                 else if (ålder < 11 && ålder >= 7)
                 {
-                    resultatLabel.Content = $"Hej {namn}. Du är {ålder} gammal och får se filmer med åldersgräns upp till 7 år”.";
+                    resultatLabel.Content = $"Hej {namn}. Du är {ålder} gammal och får se filmer med åldersgräns upp till 11 år tillsammans med en vuxen.";
                 }
 
                 else
@@ -74,12 +74,12 @@ namespace Uppgift9b
 
                 else if (ålder < 15 && ålder >= 11)
                 {
-                    resultatLabel.Content = $"Hej {namn}. Du är {ålder} gammal och då får du se filmer med åldersgräns upp till 11 år.";
+                    resultatLabel.Content = $"Hej {namn}. Du är {ålder} gammal och då får du se filmer med åldersgräns upp till 11 år";
                 }
 
                 else if (ålder < 11 && ålder >= 7)
                 {
-                    resultatLabel.Content = $"Hej {namn}. Du är {ålder} gammal och får se filmer med åldersgräns upp till 7 år”.";
+                    resultatLabel.Content = $"Hej {namn}. Du är {ålder} gammal och får se filmer med åldersgräns upp till 7 år ";
                 }
 
                 else
