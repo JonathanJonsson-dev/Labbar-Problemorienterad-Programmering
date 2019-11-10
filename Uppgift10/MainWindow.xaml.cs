@@ -26,19 +26,21 @@ namespace Uppgift10
         }
 
         Random slump = new Random();
-        
+        int antalGissningar = 0;
 
         private void slumpBtn_Click(object sender, RoutedEventArgs e)
         {
             int slumptal = slump.Next(1001);
             slumpatTal.Content = slumptal.ToString();
+            gissaBtn.IsEnabled = true;
         }
 
         private void gissaBtn_Click(object sender, RoutedEventArgs e)
         {
             int gissning = int.Parse(gissningTextbox.Text);
             int slumptal = int.Parse(slumpatTal.Content.ToString());
-
+            
+            antalGissningar +=1;
 
             if (gissning < slumptal)
             {
@@ -46,7 +48,7 @@ namespace Uppgift10
             }
             else if (gissning == slumptal)
             {
-                label.Content = "Grattis!!! Du gissade rätt";
+                label.Content = $"Grattis!!! Du gissade rätt på {antalGissningar} försök";
             }
             else
             {
