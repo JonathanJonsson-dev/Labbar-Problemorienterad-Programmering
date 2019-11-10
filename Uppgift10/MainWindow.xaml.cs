@@ -26,19 +26,20 @@ namespace Uppgift10
         }
 
         Random slump = new Random();
-        int slumptal = slump.Next(1001);
+        
 
         private void slumpBtn_Click(object sender, RoutedEventArgs e)
         {
             int slumptal = slump.Next(1001);
-            //slumpatTal.Content = slumptal.ToString();
+            slumpatTal.Content = slumptal.ToString();
         }
 
         private void gissaBtn_Click(object sender, RoutedEventArgs e)
         {
             int gissning = int.Parse(gissningTextbox.Text);
-            
-            
+            int slumptal = int.Parse(slumpatTal.Content.ToString());
+
+
             if (gissning < slumptal)
             {
                 label.Content = "Oh, du är inte ens nära. Du gissade alldeles för lågt";
