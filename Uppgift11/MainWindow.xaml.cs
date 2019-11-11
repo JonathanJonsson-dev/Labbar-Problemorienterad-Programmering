@@ -24,5 +24,22 @@ namespace Uppgift11
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int försök;
+            försök = int.Parse(försökTextBox.Text);
+            int[] result = new int[försök];
+
+
+            for (int i = 0; i < försök; i++)
+            {
+                int slump = new Random().Next(0, 2);
+                result[i] = slump;
+                //felLabel.Content = result.ToString();
+            }
+
+            felLabel.Content = result.Count();
+        }
     }
 }
