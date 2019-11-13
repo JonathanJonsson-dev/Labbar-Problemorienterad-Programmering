@@ -28,18 +28,33 @@ namespace Uppgift11
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int försök;
+            int fel;
+            int rätt;
             försök = int.Parse(försökTextBox.Text);
-            int[] result = new int[försök];
+            fel = 0;
+            rätt = 0;
 
 
             for (int i = 0; i < försök; i++)
             {
                 int slump = new Random().Next(0, 2);
-                result[i] = slump;
-                //felLabel.Content = result.ToString();
+
+                if (slump == 0)
+                {
+                    fel++;
+                }
+                else
+                {
+                    rätt++;
+                }
+                
+                progressLabel.Content = $"{(rätt / försök).ToString()}%";
             }
 
-            felLabel.Content = result.Count();
+            rättLabel.Content = rätt.ToString();
+            felLabel.Content = fel.ToString();
+
+
         }
     }
 }

@@ -17,9 +17,9 @@
         <Button x:Name="mindreOturBtn" Content="Mindre otur" HorizontalAlignment="Left" Margin="242,184,0,0" VerticalAlignment="Top" Width="75"/>
         <Label Content="Antal försök" HorizontalAlignment="Left" Margin="242,220,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <TextBox x:Name="försökTextBox" HorizontalAlignment="Left" Height="23" Margin="242,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="rättLabel" Content="Label" HorizontalAlignment="Left" Margin="374,329,0,0" VerticalAlignment="Top"/>
-        <Label Name="felLabel" Content="Label" HorizontalAlignment="Left" Margin="374,360,0,0" VerticalAlignment="Top"/>
-        <Label Name="progressResultatLabel" Content="Label" HorizontalAlignment="Left" Margin="368,153,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="rättLabel" HorizontalAlignment="Left" Margin="374,329,0,0" VerticalAlignment="Top"/>
+        <Label Name="felLabel" HorizontalAlignment="Left" Margin="374,360,0,0" VerticalAlignment="Top"/>
+        <Label Name="progressLabel" HorizontalAlignment="Left" Margin="368,153,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
