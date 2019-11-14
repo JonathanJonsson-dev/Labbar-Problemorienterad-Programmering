@@ -25,6 +25,8 @@ namespace Uppgift11
             InitializeComponent();
         }
 
+        
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int försök;
@@ -33,7 +35,11 @@ namespace Uppgift11
             försök = int.Parse(försökTextBox.Text);
             fel = 0;
             rätt = 0;
-
+            
+            ProgressBar pBar = new ProgressBar();
+            //progressBar1.Value = 50;
+            pBar.Maximum = försök;
+            pBar.Value = försök/2;
 
             for (int i = 0; i < försök; i++)
             {
@@ -42,19 +48,37 @@ namespace Uppgift11
                 if (slump == 0)
                 {
                     fel++;
+                    pBar.Value -=1;
                 }
                 else
                 {
                     rätt++;
+                    pBar.Value +=1;
                 }
                 
-                progressLabel.Content = $"{(rätt / försök).ToString()}%";
+                //progressLabel.Content = $"{(rätt / försök).ToString()}%";
             }
-
+        // labelProcent.Content = slider.Value + "%"; 
+        // NamnPåDinProgressBar.Value
+        //Exempel: NamnPåDinProgressBar.Value = 60;
             rättLabel.Content = rätt.ToString();
             felLabel.Content = fel.ToString();
 
 
         }
+        /*
+        int sannolikhet;
+        sannolikhet = 50;
+
+        private void merOturBtn_Click(object sender, RoutedEventArgs e)
+        {
+            sannolikhet += 5;
+        }
+
+        private void mindreOturBtn_Click(object sender, RoutedEventArgs e)
+        {
+            sannolikhet -= 5;
+        }
+        */
     }
 }
