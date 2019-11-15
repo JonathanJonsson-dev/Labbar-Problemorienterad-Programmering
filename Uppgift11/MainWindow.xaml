@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Smörgåsen" Height="450" Width="800">
     <Grid>
-        <ProgressBar x:Name="progressBar1" HorizontalAlignment="Left" Height="24" Margin="337,179,0,0" VerticalAlignment="Top" Width="100" Minimum="0" Value="50" SmallChange="1"/>
+        <ProgressBar x:Name="progressBar1" HorizontalAlignment="Left" Height="24" Margin="337,179,0,0" VerticalAlignment="Top" Width="100" Minimum="0" Maximum="100"/>
         <Label Content="Antal åt rätt håll" HorizontalAlignment="Left" Margin="242,329,0,0" VerticalAlignment="Top"/>
         <Label Content="Antal åt fel håll" HorizontalAlignment="Left" Margin="242,360,0,0" VerticalAlignment="Top"/>
         <Label Content="Utfall" HorizontalAlignment="Left" Margin="242,298,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
@@ -19,7 +19,7 @@
         <TextBox x:Name="försökTextBox" HorizontalAlignment="Left" Height="23" Margin="242,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="rättLabel" HorizontalAlignment="Left" Margin="374,329,0,0" VerticalAlignment="Top"/>
         <Label Name="felLabel" HorizontalAlignment="Left" Margin="374,360,0,0" VerticalAlignment="Top"/>
-        <Label Name="progressLabel" HorizontalAlignment="Left" Margin="379,163,0,0" VerticalAlignment="Top"/>
+        <Label Name="progressLabel" HorizontalAlignment="Left" Margin="378,158,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

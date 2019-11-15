@@ -23,24 +23,21 @@ namespace Uppgift11
         public MainWindow()
         {
             InitializeComponent();
+            ProgressBar pBar = new ProgressBar();
+            progressBar1.Value = 50;
         }
 
         
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int försök;
+            float försök;
             int fel;
             int rätt;
-            försök = int.Parse(försökTextBox.Text);
+            försök = float.Parse(försökTextBox.Text);
             fel = 0;
             rätt = 0;
             
-            ProgressBar pBar = new ProgressBar();
-            //progressBar1.Value = 50;
-            pBar.Maximum = försök;
-            pBar.Value = försök/2;
-
             for (int i = 0; i < försök; i++)
             {
                 int slump = new Random().Next(0, 2);
@@ -48,25 +45,20 @@ namespace Uppgift11
                 if (slump == 0)
                 {
                     fel++;
-                    pBar.Value -=1;
+                    progressBar1.Value = progressBar1.Value - Convert.ToDouble(100/försök);
                 }
                 else
                 {
                     rätt++;
-                    pBar.Value +=1;
+                    progressBar1.Value = progressBar1.Value + Convert.ToDouble(100 / försök);
                 }
                 
-                //progressLabel.Content = $"{(rätt / försök).ToString()}%";
+                progressLabel.Content = $"{progressBar1.Value}%";
             }
-        // labelProcent.Content = slider.Value + "%"; 
-        // NamnPåDinProgressBar.Value
-        //Exempel: NamnPåDinProgressBar.Value = 60;
             rättLabel.Content = rätt.ToString();
             felLabel.Content = fel.ToString();
-
-
         }
-        /*
+        
         int sannolikhet;
         sannolikhet = 50;
 
@@ -79,6 +71,6 @@ namespace Uppgift11
         {
             sannolikhet -= 5;
         }
-        */
+        
     }
 }
