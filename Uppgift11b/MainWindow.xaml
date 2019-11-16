@@ -20,6 +20,5 @@
         <Label x:Name="rättLabel" HorizontalAlignment="Left" Margin="374,329,0,0" VerticalAlignment="Top"/>
         <Label Name="felLabel" HorizontalAlignment="Left" Margin="374,360,0,0" VerticalAlignment="Top"/>
         <Label Name="progressLabel" HorizontalAlignment="Left" Margin="378,158,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labelSannolikhet" HorizontalAlignment="Left" Margin="104,86,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
