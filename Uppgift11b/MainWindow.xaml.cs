@@ -25,32 +25,38 @@ namespace Uppgift11b
             InitializeComponent();
             ProgressBar pBar = new ProgressBar();
             progressBar1.Value = 50;
+            labelSannolikhet.Content = "50";
         }
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            float försök;
-            int fel;
-            int rätt;
-            försök = float.Parse(försökTextBox.Text);
+            double försök;
+            double fel;
+            double rätt;
+            
+            int sannolikhet = (int)progressBar1.Value;
+            försök = double.Parse(försökTextBox.Text);
             fel = 0;
             rätt = 0;
 
             for (int i = 0; i < försök; i++)
             {
-                int slump = new Random().Next(0, 2);
-
-                if (slump == 0)
+                int slump = new Random().Next(0, 100);
+                // konverterar ett objekt från labelSannolikhet.Content till en string och sedan en int. 
+                if (slump <= int.Parse(labelSannolikhet.Content.ToString()))
                 {
                     fel++;
-                    progressBar1.Value = progressBar1.Value - Convert.ToDouble(100 / försök);
                 }
                 else
                 {
                     rätt++;
-                    progressBar1.Value = progressBar1.Value + Convert.ToDouble(100 / försök);
                 }
 
+                double resultat;
+                resultat = (rätt / (rätt + fel)) * 100;
+                progressBar1.Value = resultat;
                 progressLabel.Content = $"{progressBar1.Value}%";
             }
             rättLabel.Content = rätt.ToString();
@@ -59,15 +65,19 @@ namespace Uppgift11b
 
         private void merOturBtn_Click(object sender, RoutedEventArgs e)
         {
-            progressBar1.Value -= 5;
-            progressLabel.Content = $"{progressBar1.Value}%";
+            int sannolikhet = int.Parse(labelSannolikhet.Content.ToString());
+            sannolikhet -= 5;
+            //progressBar1.Value = sannolikhet;
+            labelSannolikhet.Content = sannolikhet.ToString();
+
         }
 
-        private void mindreOturBtn_Click(object sender, RoutedEventArgs e)
+        private void mindreOturBtn_Click_1(object sender, RoutedEventArgs e)
         {
-            progressBar1.Value += 5;
-            progressLabel.Content = $"{progressBar1.Value}%";
+            int sannolikhet = int.Parse(labelSannolikhet.Content.ToString());
+            sannolikhet += 5;
+            //progressBar1.Value = sannolikhet;
+            labelSannolikhet.Content = sannolikhet.ToString();
         }
-        
     }
 }

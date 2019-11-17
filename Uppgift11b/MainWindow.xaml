@@ -13,12 +13,15 @@
         <Label Content="Utfall" HorizontalAlignment="Left" Margin="242,298,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label Content="Oturskalkylator" HorizontalAlignment="Left" Margin="322,132,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Button x:Name="startaBtn" Content="Starta" HorizontalAlignment="Left" Margin="374,256,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button x:Name="merOturBtn" Content="Mer otur" HorizontalAlignment="Left" Margin="458,184,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="mindreOturBtn" Content="Mindre otur" HorizontalAlignment="Left" Margin="242,184,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="merOturBtn" Content="Mer otur" HorizontalAlignment="Left" Margin="458,184,0,0" VerticalAlignment="Top" Width="75" Click="merOturBtn_Click"/>
+        <Button x:Name="mindreOturBtn" Content="Mindre otur" HorizontalAlignment="Left" Margin="242,184,0,0" VerticalAlignment="Top" Width="75" Click="mindreOturBtn_Click_1"/>
         <Label Content="Antal försök" HorizontalAlignment="Left" Margin="242,220,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <TextBox x:Name="försökTextBox" HorizontalAlignment="Left" Height="23" Margin="242,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="rättLabel" HorizontalAlignment="Left" Margin="374,329,0,0" VerticalAlignment="Top"/>
         <Label Name="felLabel" HorizontalAlignment="Left" Margin="374,360,0,0" VerticalAlignment="Top"/>
         <Label Name="progressLabel" HorizontalAlignment="Left" Margin="378,158,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelSannolikhet" HorizontalAlignment="Left" Margin="171,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Förväntat utfall åt fel håll" HorizontalAlignment="Left" Margin="171,75,0,0" VerticalAlignment="Top"/>
+        <Label Content="Utfall åt rätt håll&#xD;&#xA;" HorizontalAlignment="Left" Margin="283,150,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
