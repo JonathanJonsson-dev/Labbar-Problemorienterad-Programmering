@@ -43,15 +43,15 @@ namespace Uppgift11b
                 if (slump == 0)
                 {
                     fel++;
-                    //progressBar1.Value = progressBar1.Value - Convert.ToDouble(100 / försök);
+                    progressBar1.Value = progressBar1.Value - Convert.ToDouble(100 / försök);
                 }
                 else
                 {
                     rätt++;
-                    //progressBar1.Value = progressBar1.Value + Convert.ToDouble(100 / försök);
+                    progressBar1.Value = progressBar1.Value + Convert.ToDouble(100 / försök);
                 }
 
-                //progressLabel.Content = $"{progressBar1.Value}%";
+                progressLabel.Content = $"{progressBar1.Value}%";
             }
             rättLabel.Content = rätt.ToString();
             felLabel.Content = fel.ToString();

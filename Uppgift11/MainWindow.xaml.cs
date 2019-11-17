@@ -31,10 +31,10 @@ namespace Uppgift11
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            float försök;
-            int fel;
-            int rätt;
-            försök = float.Parse(försökTextBox.Text);
+            double försök;
+            double fel;
+            double rätt;
+            försök = double.Parse(försökTextBox.Text);
             fel = 0;
             rätt = 0;
             
@@ -45,14 +45,15 @@ namespace Uppgift11
                 if (slump == 0)
                 {
                     fel++;
-                    progressBar1.Value = progressBar1.Value - Convert.ToDouble(100/försök);
                 }
                 else
                 {
                     rätt++;
-                    progressBar1.Value = progressBar1.Value + Convert.ToDouble(100 / försök);
                 }
-                
+
+                double resultat;
+                resultat = (rätt / (rätt + fel)) * 100;
+                progressBar1.Value = resultat;
                 progressLabel.Content = $"{progressBar1.Value}%";
             }
             rättLabel.Content = rätt.ToString();
