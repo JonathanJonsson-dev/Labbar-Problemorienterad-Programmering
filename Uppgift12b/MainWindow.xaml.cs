@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Uppgift12
+namespace Uppgift12b
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -26,17 +26,35 @@ namespace Uppgift12
         }
         double[] values = new double[5];
         int counter = 0;
-        
+
         private void okBtn_Click(object sender, RoutedEventArgs e)
         {
             if (counter < 5)
             {
                 values[counter] = double.Parse(inmatningTextbox.Text);
-                counter ++;
+                counter++;
             }
+            
+            else
+            {
+                okBtn.IsEnabled = false;
+            }
+
             listBoxValues.ItemsSource = null;
             listBoxValues.ItemsSource = values;
             medelvärdeTextbox.Text = values.Average().ToString();
+
+        }
+
+        private void nollställBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Array.Clear(values, 0, values.Length);
+            listBoxValues.ItemsSource = null;
+            listBoxValues.ItemsSource = values;
+            okBtn.IsEnabled = true;
+            counter = 0;
+            medelvärdeTextbox.Text = String.Empty;
+            inmatningTextbox.Focus();
         }
     }
 }
