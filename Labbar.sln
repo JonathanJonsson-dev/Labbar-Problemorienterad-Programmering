@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift12", "Uppgift12\Uppg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift12b", "Uppgift12b\Uppgift12b.csproj", "{318F4C1F-B316-4B11-BE5A-2EA1D873F2CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift13", "Uppgift13\Uppgift13.csproj", "{6F3D97E4-FE23-4920-A5B8-598C55C8A9AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{318F4C1F-B316-4B11-BE5A-2EA1D873F2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{318F4C1F-B316-4B11-BE5A-2EA1D873F2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{318F4C1F-B316-4B11-BE5A-2EA1D873F2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3D97E4-FE23-4920-A5B8-598C55C8A9AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3D97E4-FE23-4920-A5B8-598C55C8A9AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3D97E4-FE23-4920-A5B8-598C55C8A9AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3D97E4-FE23-4920-A5B8-598C55C8A9AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
