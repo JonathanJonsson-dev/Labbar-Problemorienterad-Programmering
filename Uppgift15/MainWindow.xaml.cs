@@ -24,5 +24,18 @@ namespace Uppgift15
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //char[] characters = userInputTextBox.Text.ToCharArray();
+            string sträng = userInputTextBox.Text; //Matar in input till en variabel
+            Rotvälska Rotvälska = new Rotvälska(); // Initierar metod
+            int antalVokaler = Rotvälska.NumberOfVowels(sträng); //Skickar sträng till metoden NumberOfVowels
+            antalVokalerLabel.Content = $"Antal vokaler: {antalVokaler}"; // Skickar antal vokaler till label
+            sträng = Rotvälska.JibberishSmåVokaler(sträng); // gör om små vokaler till jibberish
+            sträng = Rotvälska.JibberishStoraVokaler(sträng); // gör om stora vokaler till jibberish
+            rotvälskaLabel.Content = sträng; // skickar sträng till rotvälskaLabel
+
+        }
     }
 }

@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Rotvälska" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Konvertera till rotvälska" HorizontalAlignment="Left" Margin="385,183,0,0" VerticalAlignment="Top" Width="139" Height="64" Click="Button_Click"/>
+        <TextBox x:Name="userInputTextBox" HorizontalAlignment="Left" Height="97" Margin="232,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+        <Label x:Name="antalVokalerLabel" HorizontalAlignment="Left" Margin="264,337,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rotvälska" HorizontalAlignment="Left" Margin="569,150,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="rotvälskaLabel" HorizontalAlignment="Left" Margin="569,202,0,0" VerticalAlignment="Top"/>
+        <Label Content="Grundtext" HorizontalAlignment="Left" Margin="232,142,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
