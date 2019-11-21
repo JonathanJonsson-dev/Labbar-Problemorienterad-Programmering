@@ -96,5 +96,5 @@ namespace Uppgift15
             }
             return resultat;
         }*/
-    }
+    } 
 }
