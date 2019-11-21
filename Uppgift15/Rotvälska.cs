@@ -86,9 +86,14 @@ namespace Uppgift15
             return new String(charachersAttKolla);
         }
 
-        /*public bool IsVowel(string sträng)
+        /*
+        public bool IsVowel(string sträng)
         {
 
+            if (bokstav == vokal)
+            {
+                counterSmåVokaler++;
+            }
             return resultat;
         }*/
     }
